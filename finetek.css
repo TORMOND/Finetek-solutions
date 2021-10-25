@@ -100,16 +100,10 @@ body {
     font-size: 20px;
 }
 
-.wrapper {
-    height: 1448px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-}
+
 
 .blank {
-    height: 824px;
+   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -123,24 +117,14 @@ body {
 }
 
 .card {
-    width: 388px;
-    height: 196px;
+    width: 588px;
+   
     background: #F44336;
     color: #fff;
     border-radius: 4px;
 }
 
-.descriptions div {
-    width: 1650px;
-    height: 64px;
-    border-bottom: 1px solid rgb(138, 136, 136);
-    padding: 16px 24px;
-}
 
-.descriptions div {
-    display: flex;
-    justify-content: space-between;
-}
 
 .images {
    
@@ -165,7 +149,7 @@ body {
 }
 
 
-.card-1 {
+/*.card-1 {
     background: #42A5F5;
     width: 632.5px;
     height: 195.7px;
@@ -307,7 +291,7 @@ body {
     margin-right: 750px;
     margin-bottom: 5px;
 }
-
+*/
 .images img {
     width: 419.18px;
     height: 300px;
@@ -317,7 +301,8 @@ body {
 
 .divider {
     width: 660px;
-    border-right: 1px solid grey;
+    border: 1px solid grey;
+    height: 196px;
 }
 
 .divider-2 {
@@ -464,6 +449,106 @@ body {
     height: 124px;
 }
 
+.mpty{
+width:450px;
+height: 195px;
+}
+
+.vider{
+    width: 46px;
+    height: 195px;
+}
+#popup form{
+    width: 600px;
+    padding:0 24px 20px;
+}
+
+#popup{
+    width: 600px;
+    visibility: hidden;
+    z-index: 10;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+   
+    
+}
+#popup .active{
+    visibility: visible;
+    transition: 0.8s;
+    pointer-events: all;
+}
+
+
+body.active {
+    opacity: 0.25;
+    pointer-events: none;
+    user-select: none;
+    transition: 0.1s;
+}
+#wrapper .active{
+    opacity: 0.25;
+}
+
+
+
+
+#innovate .open {
+  
+    height: 64px;
+}
+.open #sentence{
+visibility: visible;
+}
+.descriptions button{
+    width: 80px;
+}
+
+
+.descriptions div {
+    width: 1650px;
+    height: 64px;
+    border-bottom: 1px solid rgb(138, 136, 136);
+    padding: 16px 24px;
+}
+
+.descriptions div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width:800px) and (max-height:937px) {
   .images{
       grid-template-columns: repeat(1, 1fr);
@@ -474,5 +559,8 @@ body {
   }
   .services{
       margin-left: -180px;
+  }
+  .blank{
+      grid-template-columns: repeat(1,1fr);
   }
 }

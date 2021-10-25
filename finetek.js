@@ -14,4 +14,49 @@ function showSlides() {
   
 }
 
-const expand = document.querySelector('.descriptions');
+
+
+function increase(){
+ const expand = document.querySelector('#innovate');
+    if (expand.className ="open"){
+   expand.className="";
+    expand.style.height = "125px";
+    document.getElementById('sentence').style.visibility = "visible";
+}
+else{
+    expand.className = "open";
+    expand.style.height = "64px";
+    document.getElementById('sentence').style.visibility = "hidden";  
+}
+}
+
+
+
+function add(){
+    const innovate = document.querySelector('#experience');
+    innovate.style.height = "125px";
+
+}
+
+function lengthen(){
+    const  decisive = document.querySelector('#decisiveness');
+    decisive.style.height = "125px";
+}
+
+function increment(){
+    const beyond = document.querySelector('#beyond');
+    beyond.style.height = "125px";
+}
+
+
+
+
+
+function toggle(){
+var blur = document.getElementById('#wrapper');
+blur.classList.toggle('active');
+
+const popup= document.getElementById('#popup');
+popup.classList.toggle('active');
+
+}

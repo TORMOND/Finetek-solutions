@@ -48,7 +48,7 @@
     </div>
     <h1 class="services">Our Services</h1>
    
-       <div class="wrapper">
+       <div id="wrapper">
 <!--
             <div id="card">
              <div class="divider">
@@ -122,10 +122,61 @@
 
 -->
 
-<div class="edition row  ">
-<div class="card row col s12 m12 l6 hide-on-med-and-down black"></div>
+<div id="popup">
+    <h3>Request Quote</h3>
+    <form>
+        <div class="row">
+            <div class="input-field col s12">
+              <input id="service" type="text" class="validate">
+              <label for="service">Select Service</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="company" type="text" class="validate">
+              <label for="company">Company Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="request" type="text" class="validate">
+              <label for="request">Request*</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="phone" type="number" class="validate">
+              <label for="phone">Telephone</label>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">email*</label>
+            </div>
+          </div>
+
+        
+    </form>
+      <p>*indicates require field</p>
+          <p>Hot-line: +254 34 19 62</p>
+
+          <button onclick="toggle()" >CANCEL</button>
+          <button>REQUEST QUOTE</button>
+</div>
+
+
+
+
+
+<div class="edition row">
+<div class="mpty row col s12 m12 l6 hide-on-med-and-down "></div>
+
     <div class="row col s12 m12 l6">
-        <div class="col s12 m6 grey">
+        <div class="col s12 m6 red">
+            <div class="divider">
             <div class="card blue">
                 <div class="card-content ">
                     <span class="card-title container">Payments</span>
@@ -133,33 +184,16 @@
                         for commercial use and compliance with our Terms of Service</p>
                 </div>
                 <div class="card-content">
-                   <button class="btn-floating red right-align"><i class="fas fa-plus"></i></button>
-                </div>
+                   <button class="btn-floating red right-align" onclick="toggle()"><i class="fas fa-plus"></i></button>
+                  </div>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
 
     
     <div class="row col s12 m12 l6 ">
-        <div class="col s12 m6 grey">
-            <div class="card blue">
-                <div class="card-content ">
-                    <span class="card-title container">Payments</span>
-                    <p>The world's most popular open-source package distribution and management experience, optimized
-                        for commercial use and compliance with our Terms of Service</p>
-                </div>
-                <div class="card-content">
-                    <button class="btn-floating red right-align"><i class="fas fa-plus"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-<div class="card row col s12 m12 l6 hide-on-med-and-down black"></div>
-
-
-<div class="card row col s12 m12 l6 hide-on-med-and-down black"></div>
-    <div class="row col s12 m12 l6 ">
-        <div class="col s12 m6 grey">
+        <div class="col s12 m6 ">
             <div class="card blue">
                 <div class="card-content ">
                     <span class="card-title container">Payments</span>
@@ -175,8 +209,9 @@
 
 
 
+<div class="mpty row col s12 m12 l6 hide-on-med-and-down "></div>
     <div class="row col s12 m12 l6 ">
-        <div class="col s12 m6 grey">
+        <div class="col s12 m6 ">
             <div class="card blue">
                 <div class="card-content ">
                     <span class="card-title container">Payments</span>
@@ -189,12 +224,29 @@
             </div>
         </div>
     </div>
-<div class="card row col s12 m12 l6 hide-on-med-and-down black"></div>
 
 
-<div class="row col s12 m12 l6 hide-on-med-and-down"></div>
+
     <div class="row col s12 m12 l6 ">
-        <div class="col s12 m6 grey">
+        <div class="col s12 m6 ">
+            <div class="card blue">
+                <div class="card-content ">
+                    <span class="card-title container">Payments</span>
+                    <p>The world's most popular open-source package distribution and management experience, optimized
+                        for commercial use and compliance with our Terms of Service</p>
+                </div>
+                <div class="card-content">
+                    <button class="btn-floating red right-align"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="mpty row col s12 m12 l6 hide-on-med-and-down "></div>
+
+
+
+    <div class="row col s12 m12 l6 ">
+        <div class="col s12 m6 ">
             <div class="card blue">
                 <div class="card-content ">
                     <span class="card-title container">Payments</span>
@@ -210,7 +262,7 @@
 
 
     <div class="row col s12 m12 l6 ">
-        <div class="col s12 m6 grey">
+        <div class="col s12 m6 ">
             <div class="card blue">
                 <div class="card-content ">
                     <span class="card-title container">Payments</span>
@@ -223,29 +275,11 @@
             </div>
         </div>
     </div>
-<div class="card row col s12 m12 l6 hide-on-med-and-down black"></div>
+<div class="mpty row col s12 m12 l6 hide-on-med-and-down "></div>
 
     
    
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </div>
@@ -255,10 +289,29 @@
 <p>Why work with finetek Technologies K Ltd</p>
 <div class="descriptions">
     
-<div><p>Innovative Process</p><i class="far fa-angle-down"></i></div>
-<div><p> high Experience</p> <i class="far fa-angle-down"></i></div>
-<div><p>decisiveness</p> <i class="far fa-angle-down"></i></div>
-<div><p>going beyond</p> <i class="far fa-angle-down"></i></i></div>
+<div id="innovate" onclick="increase()"><p>Innovative Process</p>
+   
+    <i class="far fa-angle-down" ></i>
+    </button>
+    <br>
+<span id="sentence">we offer an innovative approach to doing our system design and implementation</span>
+</div>
+<div id="experience" onclick="add()"><p> high Experience</p> <i class="far fa-angle-down" id="more" onclick="increase()"></i><br>
+<span>Our team comprises of highly experienced professionals with know how of modern tech landscape
+</span>
+</div>
+<div id="decisiveness" onclick="lengthen()"><p>decisiveness</p> <i class="far fa-angle-down" id="more" onclick="increase()"></i>
+    
+    
+    <br>
+    <span>You give us you problem, we offer you a lasting solution.</span>
+    
+
+</div>
+<div id="beyond" onclick="increment()"><p>going beyond</p> <i class="far fa-angle-down" id="more" onclick="increase()"></i><br>
+    <span>we ensure as we go beyond our boundaries of innovation, research and development, we grow beyond our limits</span>
+
+</div>
 
 </div>
 <div class="projects">
