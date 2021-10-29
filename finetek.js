@@ -10,7 +10,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 5 seconds
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
   
 }
 
@@ -21,8 +21,10 @@ function increase(){
     if (expand.className ="open"){
    expand.className="";
     expand.style.height = "125px";
-    }
+    document.getElementById('sentence').style.visibility = "visible";
+}
 else{
+    expand.className = "open";
     expand.style.height = "64px";
     document.getElementById('sentence').style.visibility = "hidden";  
 }
@@ -51,10 +53,10 @@ function increment(){
 
 
 function toggle(){
-    const body= document.querySelector('#responsive');
-    body.classList.toggle('active');
+var blur = document.getElementById('#wrapper');
+blur.classList.toggle('active');
 
-const popup= document.getElementById('popup');
+const popup= document.getElementById('#popup');
 popup.classList.toggle('active');
 
 }
