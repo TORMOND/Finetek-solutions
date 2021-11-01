@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="finetek.css">
     <link rel="shortcut icon" type="image/png" href="weblogo.75db3fd9.png"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos.js"></script>
+    <script src="https://unpkg.com/aos/dist/aos.js"></script>
 </head>
 <body>
     <div class="nav-wrapper">
@@ -18,21 +20,32 @@
 
     </div>
     <div class="cont-wrapper">
-   
+  
        <div class="mySlides">
+
+        <button class="prev"><i class="fas fa-greater-than"></i></button>
          <p>  Innovative digital solutions</p>
+          <button class="next"><i class="fas fa-less-than"></i></button>
        </div>
     <div class="mySlides">
+      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> e-commerce solutions</p>
+    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
     <div class="mySlides">
+      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> customized software solutions</p>
+    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
     <div class="mySlides">
+      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> financial service solutions</p>
+    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
     <div class="mySlides">
+      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> Go beyond,grow beyond</p>
+    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -46,7 +59,8 @@
     <div class="displays">
         <div id="card">
         <div class="divider">
-<div class="card-1">
+<div class="card-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <span class="dots"></span>
     <i class="fas fa-caret-left"></i>
     <h1>financial services</h1>
@@ -57,7 +71,8 @@
 
 <div id="card-2">
     <div class="divider-2">
-<div class="card-2">
+<div class="card-2" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <i class="fas fa-caret-right"></i>
     <h1>Precision farming</h1>
     <p>access agronomy and weather information depending on your geolocation using IoT solutions using your phone</p>
@@ -67,7 +82,8 @@
 </div>
 <div id="card-3">
 <div class="divider">
-<div class="card-3">
+<div class="card-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <span class="dots"></span>
     <i class="fas fa-caret-left"></i>
     <h1>Get market access</h1>
@@ -78,7 +94,8 @@
 
 <div id="card-4">
     <div class="divider-2">
-<div class="card-4">
+<div class="card-4" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <i class="fas fa-caret-right"></i>
     <h1>Contract farming</h1>
     <p>we enable contract farming through our interlinked solutions</p>
@@ -90,7 +107,8 @@
 <div id="card-5">
 <div class="divider">
  
-<div class="card-5">
+<div class="card-5" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <span class="dots"></span>
     <i class="fas fa-caret-left"></i>
     <h1>Do record keeping</h1>
@@ -104,7 +122,8 @@
 
 <div id="card-6">
   <div class="divider-2">
-    <div class="card-6">
+    <div class="card-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
       <i class="fas fa-caret-right"></i>
       <h1>Contract farming</h1>
       <p>we enable contract farming through our interlinked solutions</p>
@@ -159,11 +178,6 @@
           <button>REQUEST QUOTE</button>
 </div>
 
-
-
-
-
-
 <h1 class="details">Why us ?</h1>
 <p>Why work with finetek Technologies K Ltd</p>
 <div class="descriptions">
@@ -201,25 +215,63 @@
 <h1 >Projects</h1>
 <p>Our digital solutions</p>
 </div>
-<div class="images">
-<img src="Screen-9-20-2021_43239_PM.png">
-<img src="Screen-9-20-2021_43318_PM.png">
-<img src="Screen-9-20-2021_43429_PM.png">
+
+<div class="images" >
+
+  <div  data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="Screen-9-20-2021_43239_PM.png" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+  <div  data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="Screen-9-20-2021_43318_PM.png"></div>
+  <div  data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="Screen-9-20-2021_43429_PM.png"></div>
+
+
+
 </div>
 <div class="clients">
 <h1>Clients</h1>
 <p>Our client Profile</p>
 </div>
+
 <div class="blank">
-<img src="BurukLogo.jpg">
-<img src="FalconLogo.jpg">
-<img src="HHourLogo.jpg">
-<img src="RobinLogo.jpg">
-<img src="PerfectPicLogo.jpg">
-<img src="SucafinaLogo.jpg">
-<img src="MagicalKenyaLogo.jpg">
-<img src="NewHamLogo.jpg">
-<img src="MNCLogo.jpg">
+
+
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="BurukLogo.jpg">
+  </div>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="FalconLogo.jpg">
+  </div>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="HHourLogo.jpg">
+  </div>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="RobinLogo.jpg">
+  </div>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="PerfectPicLogo.jpg">
+  </div>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="SucafinaLogo.jpg">
+  </div>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="MagicalKenyaLogo.jpg">
+  </div>
+
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="NewHamLogo.jpg">
+</div>
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><img src="MNCLogo.jpg">
+</div>
+
+
+
+
+
+
+
 </div>
 <div class="footer">
     <div class="socials">
@@ -241,6 +293,7 @@ experience in development of innovative software solutions to cater for various 
 2021 — Finetek Technologies K Ltd info@fineteklabs.com +254 734 34 1962
 </p>
 </div>
+<script> AOS.init();</script>
 <script src="finetek.js"></script>
 </body>
 </html>
