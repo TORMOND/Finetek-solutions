@@ -11,95 +11,95 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos.js"></script>
     <script src="https://unpkg.com/aos/dist/aos.js"></script>
+
 </head>
 <body>
+  <div id="responsive">
     <div class="nav-wrapper">
        
 <img src="weblogo.75db3fd9.png">
 <p>Fineteklabs</p>
 
     </div>
+ <button><i class="fas fa-greater-than"></i></button>
+    <button><i class="fas fa-less-than"></i></button>
+   
     <div class="cont-wrapper">
-  
+   
        <div class="mySlides">
-
-        <button class="prev"><i class="fas fa-greater-than"></i></button>
          <p>  Innovative digital solutions</p>
-          <button class="next"><i class="fas fa-less-than"></i></button>
        </div>
     <div class="mySlides">
-      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> e-commerce solutions</p>
-    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
     <div class="mySlides">
-      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> customized software solutions</p>
-    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
     <div class="mySlides">
-      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> financial service solutions</p>
-    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
     <div class="mySlides">
-      <button class="prev"><i class="fas fa-greater-than"></i></button>
     <p> Go beyond,grow beyond</p>
-    <button class="next"><i class="fas fa-less-than"></i></button>
     </div>
-    <div style="text-align:center">
+    <div style="text-align:center" class="doted">
         <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot-1" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
     </div>
     </div>
     <h1 class="services">Our Services</h1>
+
+
+
+    <div id="wrapper">
     <div class="displays">
         <div id="card">
         <div class="divider">
-<div class="card-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-    <span class="dots"></span>
-    <i class="fas fa-caret-left"></i>
-    <h1>financial services</h1>
-    <p>we offer credit scoring services to our farmers to enable them access financial services</p>
+<div class="card-1">
+    <span class="dots"><i class="fas fa-landmark"></i></span>
+   
+    <h1> <i class="fas fa-landmark"></i>Payments</h1>
+   <p>we offer financial services integration and management for e-commerce and other businesses</p>
+   <div class="buton" onclick="toggle()"><button class="btn"><i class="fas fa-plus"></i></button></div>
+   
 </div>
 </div> 
 </div>
 
 <div id="card-2">
     <div class="divider-2">
-<div class="card-2" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+<div class="card-2">
     <i class="fas fa-caret-right"></i>
-    <h1>Precision farming</h1>
-    <p>access agronomy and weather information depending on your geolocation using IoT solutions using your phone</p>
-    <span class="dots-1"></span>
+    <h1><i class="fas fa-rocket"></i>business</h1>
+    <p>We offer varied business management solutions for businesses such as ERP systems,POS systems,Payroll systems to help improve efficiency, business management and operations in general</p>
+    <div class="buton" onclick="toggle()"><button class="btn"><i class="fas fa-plus"></i></button></div>
+    <span class="dots-1"><i class="fas fa-rocket"></i></span>
 </div>
 </div>
 </div>
 <div id="card-3">
 <div class="divider">
-<div class="card-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-    <span class="dots"></span>
+<div class="card-3">
+    <span class="dots"><i class="fas fa-shopping-cart"></i></span>
     <i class="fas fa-caret-left"></i>
-    <h1>Get market access</h1>
-    <p>do on farm record keeping, realtime and efficiently on zalisha,both for individual and co-operatives</p>
+    <h1><i class="fas fa-shopping-cart"></i>commerce</h1>
+    <p>We help you put your business up and running through development of e-commerce solutions on the go , depending on your industry
+    </p>
+    <div class="buton" onclick="toggle()"><button class="btn"><i class="fas fa-plus"></i></button></div>
 </div>
 </div>
 </div>
 
 <div id="card-4">
     <div class="divider-2">
-<div class="card-4" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+<div class="card-4">
     <i class="fas fa-caret-right"></i>
-    <h1>Contract farming</h1>
+    <h1><i class="fas fa-cogs"></i>Contract farming</h1>
     <p>we enable contract farming through our interlinked solutions</p>
-    <span class="dots-1"></span>
+    <div class="buton" onclick="toggle()"><button class="btn"><i class="fas fa-plus"></i></button></div>
+    <span class="dots-1"><i class="fas fa-cogs"></i></span>
 </div>
 </div>
 </div>
@@ -107,12 +107,13 @@
 <div id="card-5">
 <div class="divider">
  
-<div class="card-5" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-    <span class="dots"></span>
+<div class="card-5">
+    <span class="dots"><i class="fas fa-store-alt"></i></span>
     <i class="fas fa-caret-left"></i>
-    <h1>Do record keeping</h1>
-    <p>we enable proper and automated record keeping using IoT solutions</p>
+    <h1><i class="fas fa-store-alt"></i>agritech</h1>
+    <p>Through our innovative approach, we help customise agritech solutions to meet the industry needs for growth
+    </p>
+    <div class="buton" onclick="toggle()"><button class="btn"><i class="fas fa-plus"></i></button></div>
 </div>
 
 </div>
@@ -122,156 +123,110 @@
 
 <div id="card-6">
   <div class="divider-2">
-    <div class="card-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+    <div class="card-6">
       <i class="fas fa-caret-right"></i>
-      <h1>Contract farming</h1>
-      <p>we enable contract farming through our interlinked solutions</p>
-      <span class="dots-1"></span>
+      <h1><i class="fas fa-desktop"></i></i>finance</h1>
+      <p>We customise financial solutions to enable traditional businesses and informal sector persons access banking solutions</p>
+      <div class="buton" onclick="toggle()"><button class="btn"><i class="fas fa-plus"></i></button></div>
+      <span class="dots-1"><i class="fas fa-desktop"></i></i></span>
     </div>
   </div>
 </div>
     </div>
 
-<div id="popup">
-    <h3>Request Quote</h3>
-    <form>
-        <div class="row">
-            <div class="input-field col s12">
-              <input id="service" type="text" class="validate">
-              <label for="service">Select Service</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="company" type="text" class="validate">
-              <label for="company">Company Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="request" type="text" class="validate">
-              <label for="request">Request*</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="phone" type="number" class="validate">
-              <label for="phone">Telephone</label>
-            </div>
-          </div>
+  </div>
 
 
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">email*</label>
-            </div>
-          </div>
 
-        
-    </form>
-      <p>*indicates require field</p>
-          <p>Hot-line: +254 34 19 62</p>
 
-          <button onclick="toggle()" >CANCEL</button>
-          <button>REQUEST QUOTE</button>
-</div>
-
+<div id="details">
 <h1 class="details">Why us ?</h1>
 <p>Why work with finetek Technologies K Ltd</p>
-<div class="descriptions">
-    
-<div id="innovate" onclick="increase()">
+</div>
 
+
+<div class="descriptions">
+<div id="innovate" onclick="increase()">
   <p>Innovative Process</p>
     <i class="far fa-angle-down" ></i>
-    </button>
-
     <br><br>
-
 <span id="sentence">we offer an innovative approach to doing our system design and implementation</span>
 </div>
 <div id="experience" onclick="add()"><p> high Experience</p> <i class="far fa-angle-down" id="more" onclick="increase()"></i><br>
-<span >Our team comprises of highly experienced professionals with know how of modern tech landscape
+<span class="experience">Our team comprises of highly experienced professionals with know how of modern tech landscape
 </span>
 </div>
 <div id="decisiveness" onclick="lengthen()"><p>decisiveness</p> <i class="far fa-angle-down" id="more" onclick="increase()"></i>
     
     
     <br>
-    <span>You give us you problem, we offer you a lasting solution.</span>
+    <span class="decisiveness">You give us you problem, we offer you a lasting solution.</span>
     
 
 </div>
 <div id="beyond" onclick="increment()"><p>going beyond</p> <i class="far fa-angle-down" id="more" onclick="increase()"></i><br>
-    <span>we ensure as we go beyond our boundaries of innovation, research and development, we grow beyond our limits</span>
-
+    <span class="beyond">we ensure as we go beyond our boundaries of innovation, research and development, we grow beyond our limits</span>
 </div>
 
 </div>
+
+
 <div class="projects">
 
 <h1 >Projects</h1>
 <p>Our digital solutions</p>
 </div>
-
-<div class="images" >
-
+<div class="images">
   <div  data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="Screen-9-20-2021_43239_PM.png"></div>
+  data-aos-duration="2000"><img src="Screen-9-20-2021_43239_PM.png"></div>
+  <div data-aos="flip-left" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="Screen-9-20-2021_43318_PM.png"></div>
   <div  data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="Screen-9-20-2021_43318_PM.png"></div>
-  <div  data-aos="flip-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="Screen-9-20-2021_43429_PM.png"></div>
-
-
-
+  data-aos-duration="2000"><img src="Screen-9-20-2021_43429_PM.png"></div>
 </div>
+
 <div class="clients">
 <h1>Clients</h1>
 <p>Our client Profile</p>
 </div>
 
 <div class="blank">
-
-
   <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="BurukLogo.jpg">
-  </div>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="FalconLogo.jpg">
-  </div>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="HHourLogo.jpg">
-  </div>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="RobinLogo.jpg">
-  </div>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="PerfectPicLogo.jpg">
-  </div>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="SucafinaLogo.jpg">
-  </div>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="MagicalKenyaLogo.jpg">
-  </div>
-
-<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="NewHamLogo.jpg">
+  data-aos-duration="2000"><img src="BurukLogo.jpg">
 </div>
 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"><img src="MNCLogo.jpg">
+  data-aos-duration="2000"><img src="FalconLogo.jpg">
+</div>
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="HHourLogo.jpg">
+</div>
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="RobinLogo.jpg">
+</div>
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="PerfectPicLogo.jpg">
+</div>
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="SucafinaLogo.jpg">
+</div>
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="MagicalKenyaLogo.jpg">
 </div>
 
-
-
-
-
-
-
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="NewHamLogo.jpg">
 </div>
+<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"><img src="MNCLogo.jpg">
+</div>
+<div data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-easing="ease-out-cubic"
+data-aos-duration="2000"><img src="PovoLogo.jpg"></div>
+<div data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-easing="ease-out-cubic"
+data-aos-duration="2000"><img src="CanopyLogo.jpg"></div>
+<div data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-easing="ease-out-cubic"
+data-aos-duration="2000"><img src="IdeasLogo.jpg"></div>
+</div>
+
 <div class="footer">
     <div class="socials">
 <a href="https://facebook.com/zalishafrica"><i class="fab fa-facebook"></i></a>
@@ -280,17 +235,71 @@
 
     </div>
     <div class="statements">
-<p>Finetek is a software development company based in Nairobi Kenya, established in 2016, Finetek has had a remarkable
-experience in development of innovative software solutions to cater for various client needs</p>
+<div>Finetek is a software development company based in Nairobi Kenya, established in 2016, Finetek has had a remarkable
+experience in development of innovative software solutions to cater for various client needs</div>
 
-<p>Finetek is a software development company based in Nairobi Kenya, established in 2016, Finetek has had a remarkable
-experience in development of innovative software solutions to cater for various client needs</p>
+<div>Finetek is a software development company based in Nairobi Kenya, established in 2016, Finetek has had a remarkable
+experience in development of innovative software solutions to cater for various client needs</div>
 </div>
 </div>
 <div class="last-part">
     <p>
 2021 — Finetek Technologies K Ltd info@fineteklabs.com +254 734 34 1962
 </p>
+</div>
+</div>
+<div id="popup">
+  <h3>Request Quote</h3>
+  <form id="form">
+      <div class="row">
+          <div class="input-field col s12" onclick="typing()">
+            <i class="fas fa-shapes"></i>
+            <input id="service" type="text" class="validate" onclick="field">
+            <i class="fas fa-caret-down"></i>
+            <label for="service" id="services">Select Service</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12" onclick="typing2()">
+            <i class="fas fa-folder"></i>
+            <input id="company" type="text" class="validate">
+            <label for="company">Company Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12" onclick="typing3()">
+            <i class="fas fa-pen"></i>
+            <input id="request" type="text" class="validate">
+            <label for="request">Request*</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12" onclick="typing4()">
+            <i class="fas fa-pen"></i>
+            <input id="phone" type="number" class="validate">
+            <label for="phone">Telephone</label>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="input-field col s12" onclick="typing5()">
+            <i class="fas fa-envelope"></i>
+            <input id="email" type="email" class="validate">
+            <label for="email">email*</label>
+          </div>
+        </div>
+
+      
+  </form>
+  <div class="required">
+    <p>*indicates required field</p>
+        <p>Hot-line: +254 34 19 62</p>
+</div>
+<div class="togle">
+        <button onclick="toggle()" >CANCEL</button>
+        <button>REQUEST QUOTE</button>
+      </div>
 </div>
 <script> AOS.init();</script>
 <script src="finetek.js"></script>

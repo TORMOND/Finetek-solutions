@@ -10,7 +10,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
   
 }
 
@@ -18,34 +18,109 @@ function showSlides() {
 
 function increase(){
  const expand = document.querySelector('#innovate');
-    if (expand.className ="open"){
-   expand.className="";
-    expand.style.height = "125px";
-    document.getElementById('sentence').style.visibility = "visible";
-}
-else{
-    expand.className = "open";
-    expand.style.height = "64px";
-    document.getElementById('sentence').style.visibility = "hidden";  
-}
+  const sentence =  document.querySelector('#sentence');
+  const innovate = document.querySelector('#experience');
+  const experience =  document.querySelector('.experience');
+  const  decisive = document.querySelector('#decisiveness');
+  const  decisiveness=  document.querySelector('.decisiveness');
+  const beyond = document.querySelector('#beyond');
+  const bey =  document.querySelector('.beyond');
+
+
+     if(expand.classList == ""){
+        expand.classList = "open"; 
+        sentence.style.visibility = "visible";
+        innovate.classList = ""; 
+        experience.style.visibility = "hidden"; 
+        decisiveness.style.visibility = "hidden"; 
+        decisive.classList = ""; 
+        bey.style.visibility = "hidden"; 
+        beyond.classList = ""; 
+     }
+     else{
+        sentence.style.visibility = "hidden"; 
+        expand.classList = ""; 
+     }
 }
 
 
 
 function add(){
+    const expand = document.querySelector('#innovate');
+    const sentence =  document.querySelector('#sentence');
     const innovate = document.querySelector('#experience');
-    innovate.style.height = "125px";
+    const experience =  document.querySelector('.experience');
+    const  decisive = document.querySelector('#decisiveness');
+    const  decisiveness=  document.querySelector('.decisiveness');
+    const beyond = document.querySelector('#beyond');
+    const bey =  document.querySelector('.beyond');
+    if(innovate.classList == ""){
+        innovate.classList = "open"; 
+        experience.style.visibility = "visible";
+          sentence.style.visibility = "hidden"; 
+        expand.classList = ""; 
+        decisiveness.style.visibility = "hidden"; 
+        decisive.classList = ""; 
+        bey.style.visibility = "hidden"; 
+        beyond.classList = ""; 
+     }
+     else{
+        experience.style.visibility = "hidden"; 
+       innovate.classList = ""; 
+     }
 
 }
 
 function lengthen(){
+    const expand = document.querySelector('#innovate');
+    const sentence =  document.querySelector('#sentence');
+    const innovate = document.querySelector('#experience');
+    const experience =  document.querySelector('.experience');
     const  decisive = document.querySelector('#decisiveness');
-    decisive.style.height = "125px";
+    const  decisiveness=  document.querySelector('.decisiveness');
+    const beyond = document.querySelector('#beyond');
+    const bey =  document.querySelector('.beyond');
+    if(decisive.classList == ""){
+        decisive.classList = "open"; 
+         decisiveness.style.visibility = "visible";
+         sentence.style.visibility = "hidden"; 
+         expand.classList = ""; 
+         experience.style.visibility = "hidden"; 
+         innovate.classList = ""; 
+         bey.style.visibility = "hidden"; 
+         beyond.classList = ""; 
+     }
+     else{
+        decisiveness.style.visibility = "hidden"; 
+       decisive.classList = ""; 
+     }
+   
 }
 
 function increment(){
+    const expand = document.querySelector('#innovate');
+    const sentence =  document.querySelector('#sentence');
+    const innovate = document.querySelector('#experience');
+    const experience =  document.querySelector('.experience');
+    const  decisive = document.querySelector('#decisiveness');
+    const  decisiveness=  document.querySelector('.decisiveness');
     const beyond = document.querySelector('#beyond');
-    beyond.style.height = "125px";
+    const bey =  document.querySelector('.beyond');
+    if(beyond.classList == ""){
+        beyond.classList = "open"; 
+        bey.style.visibility = "visible";
+        sentence.style.visibility = "hidden"; 
+        expand.classList = ""; 
+        experience.style.visibility = "hidden"; 
+        innovate.classList = ""; 
+        decisiveness.style.visibility = "hidden"; 
+        decisive.classList = ""; 
+     }
+     else{
+        bey.style.visibility = "hidden"; 
+        beyond.classList = ""; 
+     }
+   
 }
 
 
@@ -53,10 +128,68 @@ function increment(){
 
 
 function toggle(){
-var blur = document.getElementById('#wrapper');
-blur.classList.toggle('active');
+const body= document.querySelector('#responsive');
+body.classList.toggle('active');
 
-const popup= document.getElementById('#popup');
+const popup= document.getElementById('popup');
 popup.classList.toggle('active');
 
+const form = document.getElementById('form');
+form.reset();
+
+}
+
+
+
+
+function typing(){
+    const input = document.querySelector('.validate');
+    const services = document.querySelector('#services');
+    
+
+    if(services.classList == ""){
+        services.classList = "selected";
+    }else{
+        services.classList == ""; 
+    }
+
+if(input.value === ""){
+    services.classList == "error"; 
+}
+}
+
+function typing2(){
+    const input = document.querySelector('.validate');
+    const companies = document.querySelector('#comps');
+    
+
+    if(companies.classList == ""){
+        companies.classList = "selected";
+    }else{
+        services.classList == ""; 
+    }
+}
+
+function typing3(){
+    const input = document.querySelector('.validate');
+    const companies = document.querySelector('#comps');
+    
+
+    if(companies.classList == ""){
+        companies.classList = "selected";
+    }else{
+        services.classList == ""; 
+    }
+}
+
+function typing4(){
+    const input = document.querySelector('.validate');
+    const companies = document.querySelector('#comps');
+    
+
+    if(companies.classList == ""){
+        companies.classList = "selected";
+    }else{
+        services.classList == ""; 
+    }
 }
