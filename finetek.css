@@ -194,7 +194,7 @@ body {
 
 .card-1 {
     background: #42A5F5;
-    width:calc(100% - 20px);
+    width: 632.5px;
     height: 195.7px;
     border-radius: 5px;
     font-size: 14px;
@@ -215,7 +215,7 @@ body {
 
 .card-2 {
     background: #000000;
-    width:calc(100% - 20px);
+    width: 632.5px;
     height: 242.46px;
   
     border-radius: 5px;
@@ -237,7 +237,7 @@ body {
 
 .card-3 {
     background: #FFA76A;
-    width:calc(100% - 20px);
+    width: 632.5px;
     height: 218px;
    
     border-radius: 5px;
@@ -260,7 +260,7 @@ body {
 
 .card-4 {
     background: #66BB6A;
-    width:calc(100% - 20px);
+    width: 632.5px;
     height: 195.7px;
   
     border-radius: 5px;
@@ -289,7 +289,7 @@ body {
 
 .card-5 {
     background: #EF5356;
-    width:calc(100% - 20px);
+    width: 632.5px;
     height: 218.7px;
   
     border-radius: 5px;
@@ -311,7 +311,7 @@ body {
 
 .card-6 {
     background: #283593;
-    width:calc(100% - 20px);
+    width: 632.5px;
     height: 195.7px;
    
     border-radius: 5px;
@@ -331,10 +331,14 @@ body {
     height: 55px;
 }
 .displays{
+   
+    margin: 0 auto;
+}
+#wrapper{
     display:flex;
     flex-direction: column;
+    align-items: center;
     justify-content:center;
-    margin: 0 auto;
 }
 
 
@@ -696,7 +700,7 @@ transition: 0.5s;
 
 .divider {
     width: 710px;
-    border-right: 1px solid grey;
+    border-left: 1px solid grey;
     z-index: 0;
 }
 
@@ -818,14 +822,14 @@ transition: 0.5s;
     .blank {
         grid-template-columns: repeat(1, 1fr);
     }
-    .displays .card-1, .card-3, .card-5:nth-child(odd) {
+   /* .displays .card-1, .card-3, .card-5:nth-child(odd) {
         margin-left:50px;
         margin-bottom: 5px;
     }
     .displays .card-2, .card-4, .card-6:nth-child(even) {
         margin-left: 50px;
         margin-bottom: 5px;
-    }
+    }*/
     .divider {
         width: 710px;
         border-left: 1px solid grey;
