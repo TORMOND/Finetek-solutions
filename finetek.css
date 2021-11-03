@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
+/*https://fineteklabs.com/fonts/MaterialIcons-Regular.0509ab09.woff2*/
 body {
     position: relative;
     font-family: sans-serif;
     display: flex;
     flex-flow: column;
-    align-items: center;
     width: 100%;
 }
 
@@ -97,11 +96,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;  
+    padding: 15px 0;
 }
 .projects h1 {
     color: #F44336;
     font-size: 32px;
-    margin-top: 5px;
+    
     height: 48px;
     margin: 0 auto;
 }
@@ -143,22 +143,21 @@ body {
     height: 180px;
 }
 
-
-/*.blank div{
-    animation-name: slidesup;
-    animation-duration: 4s;
-}
-
-@keyframes sliesup{
-    0%{top:0px; z-index:0;}
-    25%{top:25%; z-index:1;}
-}*/
 .socials {
     height: 68px;
     padding: 16px;
     display: flex;
     flex-flow: row;
     justify-content: center;
+}
+.socials a {
+    color: #fff;
+    text-decoration: none;
+  
+}
+.socials i{
+    margin: 20px;
+    font-size: 24px;
 }
 
 .card {
@@ -174,8 +173,23 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width:100%;
     margin: 0 auto;
+   
 }
-
+.images div{
+   
+    border-radius: 5px;
+  
+}
+.images img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: contain;
+} 
+.images p{
+  display: flex;
+  justify-content: center;
+}
 .last-part {
     width: 100%;
     height: 53.24px;
@@ -186,11 +200,7 @@ body {
     justify-content: center;
 }
 
-.socials a {
-    color: #fff;
-    text-decoration: none;
-    margin: 10px;
-}
+
 
 .card-1 {
     background: #42A5F5;
@@ -215,7 +225,7 @@ body {
 
 .card-2 {
     background: #000000;
-    width: 632.5px;
+   width:calc(100% - 50px);
     height: 242.46px;
   
     border-radius: 5px;
@@ -260,7 +270,7 @@ body {
 
 .card-4 {
     background: #66BB6A;
-    width: 632.5px;
+    width:calc(100% - 50px);
     height: 195.7px;
   
     border-radius: 5px;
@@ -281,12 +291,30 @@ body {
 .displays h1 {
     font-size: 30px;
 }
+.displays{
+   
+    margin: 0 auto;
+}
+.displays{
+    margin-left: 250px;
+ }
+ .displays .divider:nth-child(odd) {
+    margin-left: 710px;
+  
+}
+
+.displays .divider:nth-child(even) {
+    margin-right: 750px;
+}
 .card-4 p {
     font-size: 14px;
     padding: 0 16px 16px;
     height: 55px;
+    width: calc(100% - 20%);
 }
-
+.buton{
+    width: calc(100% - 20%);
+}
 .card-5 {
     background: #EF5356;
     width: 632.5px;
@@ -311,7 +339,7 @@ body {
 
 .card-6 {
     background: #283593;
-    width: 632.5px;
+    width:calc(100% - 50px);
     height: 195.7px;
    
     border-radius: 5px;
@@ -330,24 +358,15 @@ body {
     padding: 0 16px 16px;
     height: 55px;
 }
-.displays{
-   
-    margin: 0 auto;
-}
+
 #wrapper{
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
+    justify-content:center; 
 }
 
 
-.images img {
-    width: calc(100% -10px);
-    height: 300px;
-    margin:0 auto;
-    border-radius: 5px;
-}
+
 
 .divider {
     width: calc(100% - 20%);
@@ -359,13 +378,20 @@ body {
 .divider-2 {
     width: calc(100% - 20%);
 }
-.displays .divider:nth-child(odd) {
-    margin-left: 710px;
-  
+
+.divider {
+    position: relative;
+}
+.divider {
+    width: 710px;
+    border-left: 1px solid grey;
+    z-index: 0;
 }
 
-.displays .divider:nth-child(even) {
-    margin-right: 750px;
+.divider-2 {
+    width: 710px;
+    border-right: 1px solid grey;
+    z-index: 0;
 }
 #card {
     width: 1150px;
@@ -421,21 +447,28 @@ body {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    position: absolute;
-    top:620px;
-    margin: 0 auto;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.1s ease;
+    margin: 10px;
+   
+}
+
+.doted{
+   position: absolute;
+   margin-top:-50px;
+   justify-content: center;
+    z-index: 1;  
+    width:100%;
+    height: 80px;
+    visibility: visible;
+   display: flex;
 }
 .active, .dot:hover {
     background-color: #717171;
 }
 
-.divider {
-    position: relative;
-}
+
 
 .dots {
     width: 30px;
@@ -444,7 +477,7 @@ body {
     border-radius: 50%;
     border: 3px solid #ffffff;
     position: absolute;
-    top: 45%;
+    top: 44%;
     margin-left: -68px;
     display: flex;
     justify-content: center;
@@ -458,7 +491,7 @@ body {
     border-radius: 50%;
     border: 3px solid #ffffff;
     position: absolute;
-    margin-top: -58px;
+    margin-top: -88px;
     margin-left: 695px;
     display: flex;
     z-index: 1;
@@ -489,11 +522,11 @@ body {
 .statements {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding:0 30px;
+    padding:0 40px;
     margin:0 auto;
 }
-.statements div{
-    width: calc(100% - 20px);
+.statements p{
+    width: calc(100% - 50px);
 }
 #wrapper button {
     width: 30px;
@@ -523,8 +556,8 @@ body {
 }
 
 #popup {
-   width:28vw;
-    height:75vh;
+   width:30vw;
+    height:85vh;
     visibility: hidden;
     z-index: 10;
     position: fixed;
@@ -636,7 +669,9 @@ margin: 4px 0 0;
 .descriptions span {
     visibility: hidden;
 }
-
+.descriptions i{
+    color: #757474;
+}
 #innovate {
     border-bottom: 1px solid #88888a;
     cursor: pointer;
@@ -654,7 +689,7 @@ margin: 4px 0 0;
 }
 
 #innovate.open {
-    height: 74px;
+ height: 74px;
 transition: 0.5s;
 }
 
@@ -690,7 +725,6 @@ transition: 0.5s;
    
 }
 .descriptions div {
-
     padding: 16px 54px;
 }
 .descriptions p{
@@ -698,17 +732,7 @@ transition: 0.5s;
 }
 
 
-.divider {
-    width: 710px;
-    border-left: 1px solid grey;
-    z-index: 0;
-}
 
-.divider-2 {
-    width: 710px;
-    border-right: 1px solid grey;
-    z-index: 0;
-}
 
 .btn{
     border-radius: 50%;
@@ -723,20 +747,25 @@ transition: 0.5s;
     color: #fff;
 }
 .prev {
-    background: #000000;
+    background: #757474;
+    opacity: 0.5;
     color: #fff;
     position: absolute;
     z-index: 1;
+    margin-top: -280px;
+    margin-left: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-top: 280px;
-    margin-left: 20px;
+    border: none;
+    cursor: pointer;
     visibility: hidden;
+   
 }
 
 .next {
-    background: #000000;
+    background: #757474;
+    opacity: 0.5;
     color: #fff;
     position: absolute;
     z-index: 1;
@@ -745,14 +774,16 @@ transition: 0.5s;
     border-radius: 50%;
     margin-top: -265px;
     margin-left: 95%;
-    visibility: hidden;
+   border: none;
+   cursor: pointer;
+   visibility: hidden;
 }
 
-.cont-wrapper p:hover+.prev {
+.mySlides:hover+.prev {
     visibility: visible;
 }
 
-.cont-wrapper .mySlides:hover+.next {
+.mySlides:hover+.next {
     visibility: visible;
 }
 
@@ -767,7 +798,7 @@ transition: 0.5s;
     font-size: 30px;
     margin-top: 85px;
     position: absolute;
-    margin-left: 630px;
+    margin-left: 660px;
 }
 
 .card-1 .fa-caret-left {
@@ -794,9 +825,14 @@ transition: 0.5s;
     color: #283593;
 }
 
+.split{
+ display: flex;
+ width: 100%;
+}
 
-
-
+.displays p{
+    width: 580px;
+}
 
 
 
@@ -822,22 +858,70 @@ transition: 0.5s;
     .blank {
         grid-template-columns: repeat(1, 1fr);
     }
-   /* .displays .card-1, .card-3, .card-5:nth-child(odd) {
+    .displays .card-1, .card-3, .card-5:nth-child(odd) {
         margin-left:50px;
         margin-bottom: 5px;
     }
     .displays .card-2, .card-4, .card-6:nth-child(even) {
         margin-left: 50px;
         margin-bottom: 5px;
-    }*/
-    .divider {
-        width: 710px;
-        border-left: 1px solid grey;
     }
-    .divider-2 {
-        width: 710px;
-        border-left: 1px solid grey;
-    }
+  
 
     
+}
+@media all and (max-width:411px){
+    .nav-wrapper{
+        width: 235vw;
+       
+    }
+    .cont-wrapper{
+        width: 235vw;
+       
+    }
+    .displays{
+     width: 235vw;
+    }
+    .footer{
+        width: 235vw;  
+    }
+    .last-part{
+        width: 235vw;
+    }
+    .descriptions{
+        width:232vw;
+    }
+    .displays .divider:nth-child(odd) {
+        margin-left: 10px;
+      
+    }
+    .displays{
+        margin-left: 30px;
+     }
+    .divider{
+        border-right: none;
+        border-left: 1px solid grey;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    .divider-2{
+        border-right: none;
+        border-left: 1px solid grey;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    .displays .divider:nth-child(even) {
+        margin-right: 10px;
+    }
+    .dots {
+      
+        margin-left: -65px;
+       
+    }
+    .dots-1{
+        margin-left: -68px;
+    }
+    .card-1{
+      width: 125vw;
+    }
 }
