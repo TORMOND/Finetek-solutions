@@ -6,8 +6,7 @@
 body {
     position: relative;
     font-family: sans-serif;
-    display: flex;
-    flex-flow: column;
+  
     width: 100%;
 }
 
@@ -318,7 +317,6 @@ body {
     background: #EF5356;
     width: 632.5px;
     height: 218.7px;
-  
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
@@ -340,7 +338,6 @@ body {
     background: #283593;
     width:calc(100% - 50px);
     height: 195.7px;
-   
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
@@ -547,8 +544,8 @@ body {
 }
 
 #popup {
-   width:30vw;
-    height:85vh;
+   width:600px;
+    height:850px;
     visibility: hidden;
     z-index: 10;
     position: fixed;
@@ -820,12 +817,12 @@ transition: 0.5s;
     color: #283593;
 }
 .split{
- display: flex;
- width: 100%;
+ display: grid;
+ grid-template-columns: repeat(2);
 }
 
 .displays p{
-    width: 580px;
+ 
 }
 
 
@@ -860,7 +857,7 @@ transition: 0.5s;
       }
        .displays{
         width: 100vw;
-      
+        margin-left:100px;
        }
        .services{
            width: 110vw;
@@ -908,6 +905,8 @@ transition: 0.5s;
     width: 132vw;
   }
 }
+
+@media all and(max-width:1024px){ }
 @media all and (max-width:950px){
     .divider{
         border-right: none;
@@ -930,9 +929,9 @@ transition: 0.5s;
     .displays .divider:nth-child(even) {
         margin-right: 10px;
     }
-
-
-
+    #wrapper{
+        margin-left: 0px;
+       }
 
     body{
         width: 140vw;  
@@ -978,29 +977,27 @@ transition: 0.5s;
             width:140vw;
         }
         .displays .divider:nth-child(odd) {
-            margin-left: 10px;
-          
+            margin-left: 10px; 
         }
-       #wrapper{
-           margin-left: -200px;
-       }
-        #popup{
-            top: 20%;
-            left: 0%;
-            width: 5vw;
-            height: 25vh;
-        }
-    
-    
-        #popup input{
-            width: 5vw;
-        }
-        #popup .input-field{
-            width: 10vw;
-        }
-        #popup label{
-            margin-left: 0;
-        }
+ .prev{
+     display: none;
+ }
+ .next{
+     display: none;
+ }
+    #popup{
+        width: 500px;
+        height:800px;
+    }
+    #popup input{
+        width: 300px;
+    }
+    #popup .input-field{
+        width:400px;
+    }
+    #popup label{
+        margin-left: -280px;
+    }
         
         .displays{
           width: 120vw;
@@ -1078,9 +1075,7 @@ transition: 0.5s;
           .card-6{
             width: 95vw;
           }
-          .buton{
-              margin-left: -200px;
-          }
+        
           .services {
               width:580px;
               margin: 0;
@@ -1089,17 +1084,15 @@ transition: 0.5s;
 
          @media all and (max-width:800px) {
    
-            body{
-                width: 200vw;
-                
-            }
              .images {
                  grid-template-columns: repeat(1, 1fr);
-             
+             }
+             .doted{
+                width:140vw ;  
              }
              .services {
-                 margin-left: -180px;
-             }
+                width:140vw ;
+            }
              .blank {
                  grid-template-columns: repeat(1, 1fr);
              }
@@ -1111,14 +1104,16 @@ transition: 0.5s;
                  margin-left: 50px;
                  margin-bottom: 5px;
              }
-           
-         
-             
+             #wrapper{
+                margin-left: 0px;
+               }
          }
 
 @media all and (max-width:411px){
 
+    #card-6 .divider-2{
 
+    }
 body{
     width: 140vw;  
 }
@@ -1127,16 +1122,17 @@ body{
     width: 140vw;
 }
     .nav-wrapper{
-        width: 140vw;
-       
+        width: 140vw;    
     }
     .cont-wrapper{
-        width: 140vw;
-      
+        width: 140vw; 
     }
     #wrapper{
         width: 140vw;
     }
+      #wrapper{
+    margin-left: -18px;
+   }
     .next{
         margin-left: 130vw;
     }
@@ -1166,36 +1162,15 @@ body{
         margin-left: 10px;
       
     }
-   #wrapper{
-       margin-left: -200px;
-   }
-    #popup{
-        top: 20%;
-        left: 0%;
-        width: 5vw;
-        height: 25vh;
-    }
-
-
-    #popup input{
-        width: 5vw;
-    }
-    #popup .input-field{
-        width: 10vw;
-    }
-    #popup label{
-        margin-left: 0;
-    }
-    
     .displays{
       width: 120vw;
+    
      }
     .divider{
         border-right: none;
         border-left: 1px solid grey;
         margin-top: 20px;
         padding: 10px 10px;
-       
     }
     .divider-2{
         border-right: none;
@@ -1223,7 +1198,7 @@ body{
         width: 100vw;
     } #card-6{
         margin-top: 20px;
-        margin-left: 55px;
+       
         width: 100vw;
     }
     .displays .divider:nth-child(even) {
@@ -1275,13 +1250,20 @@ body{
       }
      }
      @media all and(max-width:375px){
-         .footer{
-             width:80vh;
-         }
-        .buton{
-            margin-left: -250px;
+        .footer{
+            height:80vh; 
         }
+        .buton{
+            margin-left: -350px;
+          
+        }
+        .displays p{
+            width: 305px;
+           
+        }
+     
      }
+  
     /*  .projects h1{
         margin-left: 500px;  
       }
