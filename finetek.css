@@ -609,8 +609,6 @@ margin: 4px 0 0;
     height: 28px;
     cursor: pointer;
 }
-
-
 #popup.active {
     position: fixed;
     z-index: 1;
@@ -624,8 +622,6 @@ margin: 4px 0 0;
     display: flex;
     justify-content: space-between;
 }
-
-
 .togle{
     display: flex;
     justify-content: space-between; 
@@ -704,8 +700,6 @@ transition: 0.5s;
 .descriptions button {
     width: 80px;
 }
-
-
 .descriptions{
     width:calc(100% - 10px);
     box-shadow:2px 2px 3px #919192;
@@ -744,6 +738,7 @@ transition: 0.5s;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    visibility: hidden;
 }
 
 .next {
@@ -759,14 +754,14 @@ transition: 0.5s;
     margin-left:95%;
    border: none;
    cursor: pointer;
-  
+   visibility: hidden;
 }
 
-.cont-wrapper:hover+.prev {
+.cont-wrapper:hover+.prev{
     visibility: visible;
 }
 
-.mySlides:hover+.next {
+.mySlides:hover+.next{
     visibility: visible;
 }
 
@@ -820,12 +815,6 @@ transition: 0.5s;
  display: grid;
  grid-template-columns: repeat(2);
 }
-
-.displays p{
- 
-}
-
-
 
 
 
@@ -906,7 +895,7 @@ transition: 0.5s;
   }
 }
 
-@media all and(max-width:1024px){ }
+@media all and(max-width:1024px){}
 @media all and (max-width:950px){
     .divider{
         border-right: none;
@@ -1058,22 +1047,22 @@ transition: 0.5s;
             visibility: hidden;
         }
         .card-1{
-          width: 95vw;
+          width: 85vw;
         }
         .card-2{
-            width: 95vw;
+            width: 85vw;
           }
           .card-3{
-            width: 95vw;
+            width: 85vw;
           }
           .card-4{
-            width: 95vw;
+            width: 85vw;
           }
           .card-5{
-            width: 95vw;
+            width: 85vw;
           }
           .card-6{
-            width: 95vw;
+            width: 85vw;
           }
         
           .services {
@@ -1112,7 +1101,7 @@ transition: 0.5s;
 @media all and (max-width:411px){
 
     #card-6 .divider-2{
-
+        width: 461px ; 
     }
 body{
     width: 140vw;  
@@ -1197,8 +1186,7 @@ body{
         margin-top: 20px;
         width: 100vw;
     } #card-6{
-        margin-top: 20px;
-       
+        margin-top: 20px;  
         width: 100vw;
     }
     .displays .divider:nth-child(even) {
