@@ -43,13 +43,16 @@ body {
     font-size: 60px;
     color: #fff;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mySlides p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 250px;
+    margin-top: 250px;
 }
 
 .services {
@@ -81,12 +84,10 @@ body {
 .footer {
     width: 100%;
     font-size: 14px;
- 
     background: #5c6bc0;
     color: #fff;
     display: flex;
-    align-items: center;
-   
+    align-items: center;  
     flex-direction: column;
     margin: 0 auto;
 }
@@ -138,7 +139,7 @@ body {
 }
 .blank img{
     object-fit: contain;
-    width: 376px;
+    width:100%;
     height: 180px;
 }
 
@@ -154,17 +155,10 @@ body {
     text-decoration: none;
   
 }
+
 .socials i{
     margin: 20px;
     font-size: 24px;
-}
-
-.card {
-    width: 588px;
-    background: #F44336;
-    color: #fff;
-    border-radius: 4px;
-    margin:0 auto;
 }
 
 .images {
@@ -175,9 +169,7 @@ body {
    
 }
 .images div{
-   
     border-radius: 5px;
-  
 }
 .images img {
     width: 100%;
@@ -201,7 +193,7 @@ body {
 
 .card-1 {
     background: #42A5F5;
-    width: 632.5px;
+    width:calc(100% - 50px);
     height: 195.7px;
     border-radius: 5px;
     font-size: 14px;
@@ -224,7 +216,6 @@ body {
     background: #000000;
    width:calc(100% - 50px);
     height: 242.46px;
-  
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
@@ -244,9 +235,8 @@ body {
 
 .card-3 {
     background: #FFA76A;
-    width: 632.5px;
+    width:calc(100% - 50px);
     height: 218px;
-   
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
@@ -262,14 +252,13 @@ body {
     font-size: 14px;
     padding: 0 16px 16px;
     height: 55px;
-    width: 480px;
+    width: calc(100% - 20px);
 }
 
 .card-4 {
     background: #66BB6A;
     width:calc(100% - 50px);
     height: 195.7px;
-  
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
@@ -278,17 +267,16 @@ body {
 .card-4 h1 {
     font-size: 20px;
     padding: 16px;
-    height: 44px;
-    
+    height: 44px; 
 }
 .displays h1 i{
     margin-right: 10px;
-
 }
 .displays h1 {
     font-size: 30px;
 }
 .displays{
+ 
     margin: 0 auto;
 }
 .displays{
@@ -296,7 +284,6 @@ body {
  }
  .displays .divider:nth-child(odd) {
     margin-left: 710px;
-  
 }
 
 .displays .divider:nth-child(even) {
@@ -306,18 +293,18 @@ body {
     font-size: 14px;
     padding: 0 16px 16px;
     height: 55px;
-    width: calc(100% - 20%);
+    width: calc(100% - 20px);
 }
 .buton{
     width: calc(100% - 20%);
 }
 .card-5 {
     background: #EF5356;
-   
     height: 218.7px;
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
+    width:calc(100% - 50px);
 }
 
 .card-5 h1 {
@@ -330,6 +317,7 @@ body {
     font-size: 14px;
     padding: 0 16px 16px;
     height: 55px;
+    width: calc(100% - 20px);
 }
 
 .card-6 {
@@ -410,7 +398,6 @@ body {
 }
 
 #card-4 {
-  
     height: 195.7px;
     display: flex;
     flex-direction: row;
@@ -736,7 +723,7 @@ transition: 0.5s;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    visibility: hidden;
+   visibility: hidden;
 }
 
 .next {
@@ -752,7 +739,7 @@ transition: 0.5s;
     margin-left:95%;
    border: none;
    cursor: pointer;
-   visibility: hidden;
+  visibility: hidden;
 }
 
 .cont-wrapper:hover+.prev{
@@ -867,8 +854,7 @@ transition: 0.5s;
 
 @media all and (max-width:1200px){
   .nav-wrapper{
-      width: 132vw;
-      
+      width: 132vw;  
   }
   .cont-wrapper{
     width: 132vw; 
@@ -892,6 +878,7 @@ transition: 0.5s;
     width: 132vw;
   }
 }
+
 
 @media all and(max-width:1024px){
     .card-1{
@@ -921,11 +908,13 @@ transition: 0.5s;
        .displays{
         width: 110vw;
        }
-       .displays p{
-           width: 385px;
+       .buton{
+           margin-left: -100px;
        }
+     
       
 }
+
 @media all and (max-width:950px){
     .divider{
         border-right: none;
@@ -1100,6 +1089,12 @@ transition: 0.5s;
               width:580px;
               margin: 0;
           }
+          .images{
+              grid-template-columns: repeat(2, 1fr);
+          }
+          .blank{
+            grid-template-columns: repeat(2, 1fr); 
+          }
          }
 
          @media all and (max-width:800px) {
@@ -1131,7 +1126,7 @@ transition: 0.5s;
 
 @media all and (max-width:411px){
 
-    #card-6 .divider-2{
+ #card-6 .divider-2{
         width: 461px ; 
     }
 body{
@@ -1173,7 +1168,7 @@ body{
     }
     .footer{
         width: 110vw;  
-        height: 35vh;
+        height: 55vh;
     }
     .last-part{
         width: 110vw;
@@ -1195,7 +1190,6 @@ body{
     }
     .displays .divider:nth-child(odd) {
         margin-left: 10px;
-      
     }
     .displays{
       width: 100vw;
@@ -1293,7 +1287,6 @@ body{
         }
         .buton{
             margin-left: -350px;
-          
         }
         .displays p{
             width: 305px;
@@ -1302,6 +1295,8 @@ body{
      
      }
   
+
+     
     /*  .projects h1{
         margin-left: 500px;  
       }

@@ -16,13 +16,10 @@ function showSlides() {
 }
 
 function currentSlide1(){
-        slideIndex = 0 ;
-         
+        slideIndex = 0 ;     
    }
 function currentSlide2(){
-    slideIndex = 1 ;
-   
-           
+    slideIndex = 1 ;        
 }
 function currentSlide3(){
     slideIndex = 2 ;
@@ -34,19 +31,21 @@ function currentSlide4(){
 function currentSlide5(){
      slideIndex = 4 ;
 }
+
 function prev(){
     slideIndex -= 1 ;
 }
 function next(){
     slideIndex += 1 ;
 }
+
 function increase(){
  const expand = document.querySelector('#innovate');
   const sentence =  document.querySelector('#sentence');
   const innovate = document.querySelector('#experience');
   const experience =  document.querySelector('.experience');
   const  decisive = document.querySelector('#decisiveness');
-  const  decisiveness=  document.querySelector('.decisiveness');
+  const  decisiveness =  document.querySelector('.decisiveness');
   const beyond = document.querySelector('#beyond');
   const bey =  document.querySelector('.beyond');
 

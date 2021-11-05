@@ -11,8 +11,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos.js"></script>
     <script src="https://unpkg.com/aos/dist/aos.js"></script>
-   
-</head>
+  
+
+
+  </head>
 <body>
   <div id="responsive">
     <div class="nav-wrapper">
@@ -42,7 +44,8 @@
     <div class="mySlides">
     <p> Go beyond,grow beyond</p>
     </div>
-   
+    <button class="prev" onclick="prev()"><i class="fas fa-less-than"></i></button>
+    <button class="next" onclick="next()"><i class="fas fa-greater-than"></i></button>
     </div>
      <div style="text-align:center" class="doted">
       
@@ -52,10 +55,8 @@
         <span class="dot" onclick="currentSlide4()"></span>
         <span class="dot" onclick="currentSlide5()"></span>
     </div>
-    <button class="prev" onclick="prev()"><i class="fas fa-less-than"></i></button>
-    <button class="next" onclick="next()"><i class="fas fa-greater-than"></i></button>
+    
     <h1 class="services">Our Services</h1>
-
 
 
     <div id="wrapper">
@@ -67,9 +68,10 @@ data-aos-duration="2000">
     <span class="dots"><i class="fas fa-landmark"></i></span>
     <i class="fas fa-caret-left"></i>
     <h1> <i class="fas fa-landmark"></i>Payments</h1>
+    <div class="split">
    <p>we offer financial services integration and management for e-commerce and other businesses</p>
-   <div class="buton" onclick="toggle()"><button class="btn"><i class="fas fa-plus"></i></button></div>
-   
+   <div class="buton"><button class="btn" onclick="toggle()"><i class="fas fa-plus"></i></button></div>
+   </div>
 </div>
 </div> 
 </div>
