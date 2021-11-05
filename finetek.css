@@ -99,8 +99,7 @@ body {
 }
 .projects h1 {
     color: #F44336;
-    font-size: 32px;
-    
+    font-size: 32px;  
     height: 48px;
     margin: 0 auto;
 }
@@ -290,7 +289,6 @@ body {
     font-size: 30px;
 }
 .displays{
-   
     margin: 0 auto;
 }
 .displays{
@@ -315,7 +313,7 @@ body {
 }
 .card-5 {
     background: #EF5356;
-    width: 632.5px;
+   
     height: 218.7px;
     border-radius: 5px;
     font-size: 14px;
@@ -387,7 +385,7 @@ body {
     z-index: 0;
 }
 #card {
-    width: 1150px;
+  
     height: 195.7px;
     display: flex;
     flex-direction: row;
@@ -396,7 +394,7 @@ body {
 }
 
 #card-2 {
-    width: 1150px;
+   
     height: 242.46px;
     display: flex;
     flex-direction: row;
@@ -404,7 +402,7 @@ body {
 }
 
 #card-3 {
-    width: 1150px;
+   
     height: 218.71px;
     display: flex;
     flex-direction: row;
@@ -412,7 +410,7 @@ body {
 }
 
 #card-4 {
-    width: 1150px;
+  
     height: 195.7px;
     display: flex;
     flex-direction: row;
@@ -420,7 +418,7 @@ body {
 }
 
 #card-5 {
-    width: 1150px;
+  
     height: 218.71px;
     display: flex;
     flex-direction: row;
@@ -428,7 +426,7 @@ body {
 }
 
 #card-6 {
-    width: 1150px;
+  
     height: 195.71px;
     display: flex;
     flex-direction: row;
@@ -895,7 +893,39 @@ transition: 0.5s;
   }
 }
 
-@media all and(max-width:1024px){}
+@media all and(max-width:1024px){
+    .card-1{
+        width: 85vw;
+      }
+      .card-2{
+          width: 85vw;
+        }
+        .card-3{
+          width: 85vw;
+        }
+        .card-4{
+          width: 85vw;
+        }
+        .card-5{
+          width: 85vw;
+        }
+        .card-6{
+          width: 85vw;
+        }
+        #wrapper{
+            width: 110vw;
+        }
+          #wrapper{
+        margin-left: -88px;
+       }
+       .displays{
+        width: 110vw;
+       }
+       .displays p{
+           width: 385px;
+       }
+      
+}
 @media all and (max-width:950px){
     .divider{
         border-right: none;
@@ -975,6 +1005,7 @@ transition: 0.5s;
      display: none;
  }
     #popup{
+        left:40%;
         width: 500px;
         height:800px;
     }
@@ -995,14 +1026,14 @@ transition: 0.5s;
             border-right: none;
             border-left: 1px solid grey;
             margin-top: 20px;
-            padding: 10px 10px;
+            padding: 10px 0px;
            
         }
         .divider-2{
             border-right: none;
             border-left: 1px solid grey;
             margin-top: 20px;
-            padding: 10px 8px;
+            padding: 10px 0px;
             margin-left:10px ;
         }
         #card{
@@ -1104,29 +1135,32 @@ transition: 0.5s;
         width: 461px ; 
     }
 body{
-    width: 140vw;  
+    width: 110vw;  
+}
+.doted{
+    width: 110vw;
 }
 #responsive{
     padding: 0;
-    width: 140vw;
+    width: 110vw;
 }
     .nav-wrapper{
-        width: 140vw;    
+        width: 110vw;    
     }
     .cont-wrapper{
-        width: 140vw; 
+        width: 110vw; 
     }
     #wrapper{
-        width: 140vw;
+        width: 110vw;
     }
       #wrapper{
-    margin-left: -18px;
+    margin-left: -88px;
    }
     .next{
-        margin-left: 130vw;
+        margin-left: 110vw;
     }
     .displays{
-     width: 140vw;
+     width: 110vw;
     }
     .displays p{
         width: 385px;
@@ -1138,21 +1172,33 @@ body{
         width: 385px;
     }
     .footer{
-        width: 140vw;  
+        width: 110vw;  
         height: 35vh;
     }
     .last-part{
-        width: 140vw;
+        width: 110vw;
     }
     .descriptions{
-        width:140vw;
+        width:110vw;
+    }
+    .images{
+       width: 110vw;
+    }
+    .images div{
+        width: 105vw;
+     }
+    .images img{
+        width: 105vw;
+     }
+    .blank{
+        width: 110vw;
     }
     .displays .divider:nth-child(odd) {
         margin-left: 10px;
       
     }
     .displays{
-      width: 120vw;
+      width: 100vw;
     
      }
     .divider{
@@ -1209,32 +1255,36 @@ body{
         visibility: hidden;
     }
     .card-1{
-      width: 95vw;
+      width: 80vw;
     }
     .card-2{
-        width: 95vw;
+        width: 80vw;
       }
       .card-3{
-        width: 95vw;
+        width: 80vw;
       }
       .card-4{
-        width: 95vw;
+        width: 80vw;
       }
       .card-5{
-        width: 95vw;
+        width: 80vw;
       }
       .card-6{
-        width: 95vw;
+        width: 80vw;
       }
       .buton{
-          margin-left: -200px;
+          width: 100px;
+          margin-left: -280px;
       }
       .services {
-          width:580px;
+          width:110vw;
           margin: 0;
       }
       .dot{
-          margin-left: 50px;
+          margin-left: 30px;
+      }
+      .last-part p{
+          width: 90vw;
       }
      }
      @media all and(max-width:375px){
