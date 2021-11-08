@@ -224,11 +224,12 @@ body {
     background: #2196F3;
     border-radius: 50%;
     border: 3px solid #ffffff;
-    margin: auto ;
+    margin: auto;
     margin-top: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .dots-1 {
@@ -242,6 +243,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .mySlides:first-child {
@@ -522,7 +524,7 @@ transition: 0.5s;
     font-size: 30px;
     margin-top: 85px;
     position: absolute;
-    margin-left: 595px;
+    margin-left:485px;
 }
 
 .card .fa-caret-left {
@@ -595,9 +597,7 @@ transition: 0.5s;
 .wraps span p{
     grid-column: 1/11;
 } 
-.wraps span h1 i{
-    margin-right:10px ;
-}
+
 .wraps span .btn{
     grid-column: 11/12;
 }
@@ -646,7 +646,7 @@ transition: 0.5s;
     grid-column:2/6;
     grid-row: 2;   
     background: #000000;
-      border-radius: 5px;
+    border-radius: 5px;
 }
 
 .empty-2{
@@ -720,7 +720,7 @@ transition: 0.5s;
     z-index: -1;
     width: 1px;
     height:195px;
-    background: black;
+    background: rgb(238, 235, 235);
     margin-left:78px;
 }
 
@@ -846,6 +846,21 @@ grid-row: 1;
          }
 
 @media all and (max-width:411px){
+    #popup{
+        left:40%;
+        width: 300px;
+        height:800px;
+        overflow: scroll;
+    }
+    #popup input{
+        width: 250px;
+    }
+    #popup .input-field{
+        width:200px;
+    }
+    #popup label{
+        margin-left: -180px;
+    }
     .mySlides p{
        width: calc(100% - 20px);
     }
