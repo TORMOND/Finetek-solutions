@@ -89,6 +89,7 @@ body {
     align-items: center;  
     flex-direction: column;
     margin: 0 auto;
+    
 }
 .projects{
     margin: 0 auto;
@@ -131,15 +132,15 @@ body {
 .blank {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  
 }
 .blank div{
     margin:0 auto;
+    padding: 4px;
 }
 .blank img{
     object-fit: contain;
     width:100%;
-    height: 180px;
+    height: 164px;
 }
 
 .socials {
@@ -148,11 +149,12 @@ body {
     display: flex;
     flex-flow: row;
     justify-content: center;
+    
 }
 .socials a {
     color: #fff;
     text-decoration: none;
-  
+ 
 }
 
 .socials i{
@@ -188,6 +190,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 16px;
 }
 
 
@@ -224,12 +227,19 @@ body {
     border-radius: 50%;
     border: 3px solid #ffffff;
     margin: auto;
-    margin-top: 65%;
+    margin-top: 63%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
+.dots i{
+    margin-left:5px;
+}
+.dots-1 i{
+    margin-left:5px;
+}
+
 
 .dots-1 {
     width: 30px;
@@ -242,7 +252,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+   
 }
 
 .mySlides:first-child {
@@ -265,14 +275,58 @@ body {
     background: #000000DE;
 }
 
+.prev {
+    background: #757474;
+    opacity: 0.5;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    margin-top: -320px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.next {
+    background: #757474;
+    opacity: 0.5;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: -320px;
+    margin-left:95%;
+    border: none;
+    cursor: pointer;
+  visibility: hidden;
+
+}
+
+.cont-wrapper:hover+.prev{
+  visibility: visible; 
+    
+}
+
+.cont-wrapper:hover+.next{
+  visibility: visible;
+
+}
 .statements {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding:0 40px;
+    padding:12px 40px;
     margin:0 auto;
+    
 }
 .statements p{
     width: calc(100% - 50px);
+    
 }
 
 .mpty {
@@ -345,7 +399,6 @@ margin: 4px 0 0;
 #popup h3{
     padding: 16px 24px 10px;
 }
-
 
 #popup button{
     background: #1976D2;
@@ -465,56 +518,19 @@ transition: 0.5s;
 .fa-plus{
     color: #fff;
 }
-.prev {
-    background: #757474;
-    opacity: 0.5;
-    color: #fff;
-    position: absolute;
-    z-index: 1;
-    margin-top: -320px;
-    margin-left: 20px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
- 
-}
 
-.next {
-    background: #757474;
-    opacity: 0.5;
-    color: #fff;
-    position: absolute;
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-top: -320px;
-    margin-left:95%;
-   border: none;
-   cursor: pointer;
- 
-}
 
-.cont-wrapper:hover .prev{
-    visibility: visible;
-}
-
-.mySlides:hover .next{
-    visibility: visible;
-}
 
 .fa-caret-left {
     font-size: 30px;
-    margin-top: 90px;
+    margin-top: 88px;
     position: absolute;
     margin-left: -10px;
 }
 
 .fa-caret-right {
     font-size: 30px;
-    margin-top:80px;
+    margin-top:78px;
     position: absolute;
     margin-left: 99.8%;
 }
@@ -900,7 +916,7 @@ grid-row: 1;
   @media all and (max-width:375px){
     #innovate.open {
         height:130px;
-    transition: 0.5s;
+        transition: 0.5s;
     }
     #experience.open{
         height: 130px;

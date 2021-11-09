@@ -50,6 +50,12 @@ function increase(){
   const bey =  document.querySelector('.beyond');
   const up  = document.getElementById('up');
   const down  = document.getElementById('down');
+  const addup  = document.getElementById('up-1');
+  const adddown  = document.getElementById('down-1');
+  const lengthenup  = document.getElementById('up-2');
+  const lengthendown  = document.getElementById('down-2');
+  const incrementup  = document.getElementById('up-3');
+  const incrementdown  = document.getElementById('down-3');
 
      if(expand.classList == ""){
         expand.classList = "open"; 
@@ -62,6 +68,12 @@ function increase(){
         decisive.classList = ""; 
         bey.style.visibility = "hidden"; 
         beyond.classList = ""; 
+        addup.style.visibility = "hidden";
+        adddown.style.visibility = "visible";
+        lengthenup.style.visibility = "hidden";
+        lengthendown.style.visibility = "visible";
+        incrementup.style.visibility = "hidden";
+        incrementdown.style.visibility = "visible";
      }
      else{
         sentence.style.visibility = "hidden"; 
@@ -84,6 +96,12 @@ function add(){
     const bey =  document.querySelector('.beyond');
     const addup  = document.getElementById('up-1');
     const adddown  = document.getElementById('down-1');
+    const lengthenup  = document.getElementById('up-2');
+    const lengthendown  = document.getElementById('down-2');
+    const incrementup  = document.getElementById('up-3');
+    const incrementdown  = document.getElementById('down-3');
+    const up  = document.getElementById('up');
+    const down  = document.getElementById('down');
     if(innovate.classList == ""){
         innovate.classList = "open"; 
         experience.style.visibility = "visible";
@@ -95,6 +113,12 @@ function add(){
         decisive.classList = ""; 
         bey.style.visibility = "hidden"; 
         beyond.classList = ""; 
+        up.style.visibility = "hidden";
+        down.style.visibility = "visible";
+        lengthenup.style.visibility = "hidden";
+        lengthendown.style.visibility = "visible";
+        incrementup.style.visibility = "hidden";
+        incrementdown.style.visibility = "visible";
      }
      else{
         experience.style.visibility = "hidden"; 
@@ -116,6 +140,12 @@ function lengthen(){
     const bey =  document.querySelector('.beyond');
     const lengthenup  = document.getElementById('up-2');
     const lengthendown  = document.getElementById('down-2');
+    const addup  = document.getElementById('up-1');
+    const adddown  = document.getElementById('down-1');
+    const up  = document.getElementById('up');
+    const down  = document.getElementById('down');
+    const incrementup  = document.getElementById('up-3');
+    const incrementdown  = document.getElementById('down-3');
     if(decisive.classList == ""){
         decisive.classList = "open"; 
          decisiveness.style.visibility = "visible";
@@ -127,6 +157,12 @@ function lengthen(){
          innovate.classList = ""; 
          bey.style.visibility = "hidden"; 
          beyond.classList = ""; 
+         up.style.visibility = "hidden";
+         down.style.visibility = "visible";
+         addup.style.visibility = "hidden";
+         adddown.style.visibility = "visible";
+         incrementup.style.visibility = "hidden";
+         incrementdown.style.visibility = "visible";
      }
      else{
         decisiveness.style.visibility = "hidden"; 
@@ -148,6 +184,12 @@ function increment(){
     const bey =  document.querySelector('.beyond');
     const incrementup  = document.getElementById('up-3');
     const incrementdown  = document.getElementById('down-3');
+    const addup  = document.getElementById('up-1');
+    const adddown  = document.getElementById('down-1');
+    const lengthenup  = document.getElementById('up-2');
+    const lengthendown  = document.getElementById('down-2');
+    const up  = document.getElementById('up');
+    const down  = document.getElementById('down');
     if(beyond.classList == ""){
         beyond.classList = "open"; 
         bey.style.visibility = "visible";
@@ -159,6 +201,12 @@ function increment(){
         innovate.classList = ""; 
         decisiveness.style.visibility = "hidden"; 
         decisive.classList = ""; 
+        up.style.visibility = "hidden";
+        down.style.visibility = "visible";
+        addup.style.visibility = "hidden";
+        adddown.style.visibility = "visible";
+        lengthenup.style.visibility = "hidden";
+        lengthendown.style.visibility = "visible";
      }
      else{
         bey.style.visibility = "hidden"; 
