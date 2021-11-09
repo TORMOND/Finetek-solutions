@@ -631,7 +631,7 @@ transition: 0.5s;
     position: relative;
 }
 .card{
-    grid-column:7/11;
+    grid-column:7/12;
     grid-row: 1;   
     background: #42A5F5;
     border-radius: 5px;
@@ -651,7 +651,7 @@ transition: 0.5s;
     position: relative;
 }
 .card-10{
-    grid-column:2/6;
+    grid-column:1/6;
     grid-row: 2;   
     background: #000000;
     border-radius: 5px;
@@ -671,7 +671,7 @@ transition: 0.5s;
     position: relative;
 }
 .card-20{
-    grid-column:7/11;
+    grid-column:7/12;
     grid-row: 3;   
     background: #FFA76A;
       border-radius: 10px;
@@ -679,7 +679,7 @@ transition: 0.5s;
 }
 
 .empty-3{
-    grid-column:7/11;
+    grid-column:7/12;
     grid-row: 4;
     height: 196px;
    
@@ -691,7 +691,7 @@ transition: 0.5s;
     position: relative;
 }
 .card-30{
-    grid-column:2/6;
+    grid-column:1/6;
     grid-row: 4;   
     background: #66BB6A;
     position: relative;
@@ -709,14 +709,14 @@ transition: 0.5s;
     position: relative;
 }
 .card-40{
-    grid-column:7/11;
+    grid-column:7/12;
     grid-row: 5;   
     background: #EF5356;
     position: relative;
       border-radius: 5px;
 }
 .card-50{
-    grid-column:2/6;
+    grid-column:1/6;
     grid-row: 6;   
     background: #283593;
     position: relative;
