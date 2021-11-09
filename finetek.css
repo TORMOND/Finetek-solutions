@@ -6,7 +6,6 @@
 body {
     position: relative;
     font-family: sans-serif;
-  
     width: 100%;
 }
 
@@ -275,15 +274,6 @@ body {
 .statements p{
     width: calc(100% - 50px);
 }
-#wrapper button {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #EF5356;
-    color: #fff;
-    border: none;
-    box-shadow: 2px 2px #88888a;
-}
 
 .mpty {
     width: 450px;
@@ -301,7 +291,7 @@ body {
 }
 
 #popup {
-   width:600px;
+    width:600px;
     height:850px;
     visibility: hidden;
     z-index: 10;
@@ -311,7 +301,6 @@ body {
     left: 50%;
     background: #fff;
     transition: 1s;
-   
 }
 
 #popup input{
@@ -327,6 +316,7 @@ border: none;
 #popup i{
     color: #88888a;
 }
+
 .input-field{
 padding:12px;
 width: 528px;
@@ -428,20 +418,18 @@ margin: 4px 0 0;
     border-top: 1px solid #88888a;
     transition: 0.5s;
 }
-
-#innovate.open {
- height: 84px;
-transition: 0.5s;
-}
-
 #sentence {
     visibility: hidden;
 }
 
  #sentence {
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
+#innovate.open {
+    height: 84px;
+transition: 0.5s;
+}
 #experience.open{
     height: 84px;
     transition: 0.5s;
@@ -467,9 +455,13 @@ transition: 0.5s;
     padding: 10px 54px;
 }
 .descriptions p{
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
 }
-
+.fa-angle-up{
+ visibility:hidden;
+}
 .fa-plus{
     color: #fff;
 }
@@ -486,7 +478,7 @@ transition: 0.5s;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-  visibility: hidden;
+ 
 }
 
 .next {
@@ -502,7 +494,7 @@ transition: 0.5s;
     margin-left:95%;
    border: none;
    cursor: pointer;
- visibility: hidden;
+ 
 }
 
 .cont-wrapper:hover .prev{
@@ -522,9 +514,9 @@ transition: 0.5s;
 
 .fa-caret-right {
     font-size: 30px;
-    margin-top: 85px;
+    margin-top:80px;
     position: absolute;
-    margin-left:485px;
+    margin-left: 99.8%;
 }
 
 .card .fa-caret-left {
@@ -571,18 +563,16 @@ transition: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin:0 auto;
     
 }
 
 .wraps{
-    margin:0 auto ;
      display: grid;
      grid-template-columns: repeat(12, 1fr);
      padding: 20px 12px;
-    
      color: #fff;
-     
+     margin-left: 150px;
 }
 .wraps h1{
     padding: 16px;
@@ -622,13 +612,14 @@ transition: 0.5s;
     grid-column:6/7;
     grid-row: 1;   
     height: 196px;
+    position: relative;
 }
 .card{
     grid-column:7/11;
     grid-row: 1;   
     background: #42A5F5;
-   
     border-radius: 5px;
+    position: relative;
 }
 
 .empty-1{
@@ -641,12 +632,14 @@ transition: 0.5s;
     grid-column:6/7;
     grid-row: 2;   
     height: 196px;
+    position: relative;
 }
 .card-10{
     grid-column:2/6;
     grid-row: 2;   
     background: #000000;
     border-radius: 5px;
+    position: relative;
 }
 
 .empty-2{
@@ -659,12 +652,14 @@ transition: 0.5s;
     grid-column:6/7;
     grid-row: 3;   
     height: 196px;
+    position: relative;
 }
 .card-20{
     grid-column:7/11;
     grid-row: 3;   
     background: #FFA76A;
       border-radius: 10px;
+      position: relative;
 }
 
 .empty-3{
@@ -677,12 +672,13 @@ transition: 0.5s;
     grid-column:6/7;
     grid-row: 4;   
     height: 196px;
+    position: relative;
 }
 .card-30{
     grid-column:2/6;
     grid-row: 4;   
     background: #66BB6A;
-  
+    position: relative;
       border-radius: 5px;
 }
 .empty-4{
@@ -694,19 +690,20 @@ transition: 0.5s;
     grid-column:6/7;
     grid-row: 5;   
     height: 196px;
+    position: relative;
 }
 .card-40{
     grid-column:7/11;
     grid-row: 5;   
     background: #EF5356;
-    
+    position: relative;
       border-radius: 5px;
 }
 .card-50{
     grid-column:2/6;
     grid-row: 6;   
     background: #283593;
-  
+    position: relative;
       border-radius: 10px;
 }
 .border-line-5{
@@ -714,6 +711,7 @@ transition: 0.5s;
     grid-row:6 ;
     height: 196px;
    position: relative;
+ 
 }
 .liner{
     position: absolute;
@@ -721,12 +719,21 @@ transition: 0.5s;
     width: 1px;
     height:195px;
     background: rgb(238, 235, 235);
-    margin-left:78px;
+    margin-left:50%;
 }
 
 
 
 @media all and (max-width:950px){
+  .card-10  .fa-caret-left{
+        visibility: visible;
+    }
+    .card-30  .fa-caret-left{
+        visibility: visible;
+    }
+    .card-50  .fa-caret-left{
+        visibility: visible;
+    }
     
 .empty{
     display: none;
@@ -794,6 +801,7 @@ grid-row: 1;
 }
 .wraps{
     grid-template-columns: repeat(12, 1fr);
+    margin-left: 0;
 }
 .liner{
   margin-left: 28px;  
@@ -885,8 +893,29 @@ grid-row: 1;
         height: 380px;  
       }
 
+
+
+
      }
-   
+  @media all and (max-width:375px){
+    #innovate.open {
+        height:130px;
+    transition: 0.5s;
+    }
+    #experience.open{
+        height: 130px;
+        transition: 0.5s;
+    }
+    #decisiveness.open{
+        height: 130px;
+        transition: 0.5s;
+    }
+    #beyond.open{
+        height: 130px;
+        transition: 0.5s;
+    }
+    
+  }
 
 
 
